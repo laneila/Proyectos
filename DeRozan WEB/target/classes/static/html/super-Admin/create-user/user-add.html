@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/super-adminCSS/create-user/user-add.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/noty/lib/noty.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/noty/lib/themes/mint.css">
+    <title>Create User</title>
+</head>
+<body>
+<div class="user-add-container">
+    <div class="user-add">
+        <div class="user-add-title">
+            <h1>Create user</h1>
+        </div>
+
+        <div class="user-add-admin">
+            <div class="boxes-input">
+                <div class="input-random">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" class="box-input">
+                </div>
+                <div class="input-random">
+                    <label for="lastname">Lastname</label>
+                    <input type="text" id="lastname" class="box-input">
+                </div>
+            </div>
+            
+            <div class="boxes-input">
+                <div class="input-random">
+                    <label for="email-user">Email</label>
+                    <input type="text" id="email-user" class="box-input">
+                </div>
+                <div class="input-random">
+                    <label for="select-rol">Role</label>
+                    <select name="select" id="select-rol" class="box-input">
+                        <option value="2">admin</option>
+                        <option value="3">super-admin</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="boxes-input">
+                <div class="input-random">
+                    <label for="birth-date">Birth Date</label>
+                    <input type="date" id="birth-date" class="box-input">
+                </div>
+            </div>
+            
+
+            <div class="user-add-title">
+            <h1>New password for administrators</h1>
+            </div>
+
+            <div class="input-random">
+                <label >Password</label>
+                <input type="password" id="new-password" class="box-input">
+            </div>
+            
+
+            
+                <div class="buttons-option">
+                    <button type="button" id="new-user-btn">New</button>
+                    <a href="../create-user/user-main.html"><button type="button" id="cancel-user-btn">Back</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="message"></div>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="../../../js/super-admin/user/add-user.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add products</title>
+    <link rel="stylesheet" href="../../../css/super-adminCSS/productsSA/add-product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/noty/lib/noty.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/noty/lib/themes/mint.css">
+</head>
+<body>
+<div class="container">
+    <form enctype="multipart/form-data">
+        <div class="column1">
+            <div class="title-section">
+                <h1>ADD PRODUCT</h1>
+            </div>
+
+            <div class="input-field">
+                <label>Product Title</label>
+                <input type="text" id="productTitle" class="box-input">
+            </div>
+
+            <div class="input-field">
+                <label>Product Description</label>
+                <input type="text" id="productDescription" class="box-input">
+                
+            </div>
+
+            <div class="input-field">
+                <label>Brand</label>
+                <input type="text" id="brand" class="box-input">
+                
+            </div>
+            <div class="input-field">  
+                <label>Amount</label>      
+                <input type="text" id="amount" class="box-input">
+                
+            </div>
+            <div class="input-field">
+                <label>Price</label>
+                <input type="text" id="price" class="box-input">
+                
+            </div>
+            <div class="input-field">
+                <label>Size</label>
+                <input type="text" id="size" class="box-input">
+                
+            </div>
+            <div class="input-field">  
+                <label>Categories</label>             
+                <input type="text" id="categories" class="box-input"> 
+                
+            </div>
+            <div class="input-field">  
+                <label>Color</label>  
+                <input type="text" id="color" class="box-input">
+                
+            </div>
+            <div class="input-field">
+                <label>Id product</label>             
+                <input type="text" id="productId" class="box-input">
+                
+            </div>
+            <div class="input-field">  
+                <label>Id Line</label>
+                <input type="text" id="lineId" class="box-input">
+                
+            </div>
+
+            <button class="contenedor-btn-file">
+                <label for="file1"></label>
+                <input type="file" id="file1">
+            </button>
+
+            <button type="button" id="save-product">
+                <i class="fa-regular fa-floppy-disk"></i> Save All Product Info 
+            </button>
+
+            <a href="../principalSA.html">
+                <i class='bx bx-arrow-back'></i>    
+            </a>
+                
+        </div>
+    </form>
+
+</div>
+<div id="message"></div>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="../../../js/super-admin/productos/add-product.js"></script>
+</body>
+</html>

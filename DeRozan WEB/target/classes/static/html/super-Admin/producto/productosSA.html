@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="../../../css/super-adminCSS/productsSA/mainSA.css">
+
+	<title>Sneakers</title>
+</head>
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="../../../index.html" class="brand">
+			<span class="text">DEROZAN</span>
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="../principalSA.html">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="./productosSA.html">
+					<i class='bx bx-package'></i>
+					<span class="text">Sneakers</span>
+				</a>
+			</li>
+			<li>
+				<a href="../brand/brand-Main.html">
+					<i class='bx bxs-doughnut-chart' ></i>
+					<span class="text">Brand</span>
+				</a>
+			</li>
+			<li>
+				<a href="../Iconic-line/iconic-lineMain.html">
+					<i class='bx bxs-doughnut-chart' ></i>
+					<span class="text">Iconic line</span>
+				</a>
+			</li>
+			<li>
+				<a href="../create-user/user-main.html">
+					<i class='bx bxs-message-dots' ></i>
+					<span class="text">User</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="./info-cuentaSA/menu-super.html">
+					<i class='bx bxs-cog' ></i>
+					<span class="text">Settings</span>
+				</a>
+			</li>
+			<li>
+				<a href="../../../index.html" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link">Categories</a>
+		</nav>
+	
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>My Sneakers</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a href="./principalSA.html">Dashboard</a>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a class="active" href="#">Sneakers</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<ul class="box-info-product">
+				<li>
+                    <a href="../../create-product.html">
+                        <i class='bx bx-cloud-download'></i>
+                        <span class="text">
+                            <h3>catalogo</h3>
+                            <p>New Sneakers</p>
+                        </span>
+                    </a>
+				</li>
+
+				<li>
+                    <a href="../../super-Admin/producto/add-product.html">
+                        <i class='bx bx-cloud-download'></i>
+                        <span class="text">
+                            <h3>Base De Datos</h3>
+                            <p>New Sneakers</p>
+                        </span>
+                    </a>
+				</li>
+
+				<li>
+                    <a href="../producto/update-producto.html">
+                        <i class='bx bx-rename'></i>
+                        <span class="text">
+                            <h3></h3>
+                            <p>Update Sneakers</p>
+                        </span>
+                    </a>
+				</li>
+                
+				<li>
+                    <a href="../producto/delete-products.html">                  
+                        <i class='bx bxs-trash' ></i>
+                        <span class="text">
+                            <h3></h3>
+                            <p>Delete Sneakers</p>
+                        </span>
+                    </a>
+				</li>
+			</ul>
+
+
+			<div class="table-data">
+				<div class="order">
+					<div class="head">
+						<h3>Recent Orders</h3>
+						<i class='bx bx-search' ></i>
+						<i class='bx bx-filter' ></i>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th>Sneaker</th>
+								<th>Description</th>
+								<th>size</th>
+								<th>color</th>
+								<th>category</th>
+								<th>amount</th>
+								<th>registration date</th>
+								<th>status</th>
+								<th>Brand</th>
+								<th>Iconic Line</th>
+							</tr>
+						</thead>
+						<tbody>
+							<!-- Data will be populated here by JavaScript -->
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script src="../../../js/super-admin/script.js"></script>
+	<script src="../../../js/super-admin/productos/product-table.js"> </script>
+</body>
+</html>
